@@ -1,0 +1,40 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #B0C4DE;
+	padding: 20px 0;
+}
+
+header img {
+    width: 15em;
+    margin: 0 0 0 10px;
+}
+
+.cabecalho {
+    width: 940px;
+}
+
+.nome_principal {
+    margin: 20px 0 0 20px;
+    font-weight: bold;
+}
+
+table {
+    margin: 20px 0 40px 20px;
+}
+
+thead {
+    background: #555555;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+th, td {
+    font-size: 12px;
+    border: 1px solid #000000;
+    padding: 5px;
+    text-align: center;
+        
+}
