@@ -7,9 +7,14 @@ header {
 	padding: 20px 0;
 }
 
-header img {
+.logo-principal {
     width: 15em;
     margin: 0 0 0 10px;
+}
+
+.logo-secundaria {
+    width: 15em;
+    margin: 0 10px 0 0;
 }
 
 .cabecalho {
