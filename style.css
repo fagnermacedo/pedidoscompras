@@ -7,6 +7,30 @@ header {
 	padding: 20px 0;
 }
 
+header img {
+    width: 15em;
+}
+
 .cabecalho {
     width: 940px;
+}
+
+.nome_principal {
+    margin: 20px 0 0 20px;
+}
+
+table {
+    margin: 20px 0 40px 20px;
+}
+
+thead {
+    background: #555555;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 3px;
+    
 }
