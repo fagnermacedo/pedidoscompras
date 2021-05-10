@@ -1,33 +1,117 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif, arial;;
+    
 }
 
 header {
-	background: #B0C4DE;
-	padding: 20px 0;
+	position: relative;
+    background: #000000;
+    padding: 5em 0;
+    text-align: center;
+    width: 100%;
+    
 }
 
-.logo-principal {
-    width: 15em;
-    margin: 0 0 0 10px;
-}
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
 
-.logo-secundaria {
-    width: 5em;
-    margin: 0 5px 0 0;
+.descricao-sistema {
+    position: absolute;    
+    font-family: ;
+    color: #DCDCDC;    
+    font-size: 2em;
+
 }
 
 .cabecalho {
     width: 940px;
 }
 
+.logo-principal {
+    
+    width: 15em;
+    position: absolute;
+    right: 50%;  
+    top: 10%; 
+    
+}
+
+.logo-usuario {
+    width: 3.5em;
+    position: absolute;
+    right: 55px;
+    
+}
+
+/*
+....
+ #########################################################################
+    Dividindo as secções do arquivo HTML. Parte da secção main do arquivo
+ #########################################################################
+....
+*/
+
+.paragrafo-status {
+    margin: 2em 0 0 1em;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.status-pedidos {
+    
+    width: 97%;
+    margin: 0 1.5em;
+    height: 10em;    
+    background-color: #FFFFFF;
+    border: thick 1px #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+        
+}
+
+.tipos-de-status {
+    text-align: center;
+    vertical-align: center;
+}
+
+.tipos-de-status li {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    margin: 2% 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    background-color: #DCDCDC;
+    border-radius: 5px; 
+    
+
+}
+
+.tipos-de-status li:hover {
+    border-color: #C78C19;
+    background-color: white;
+}
+
+/* ############################################### */
+
+.lista-tabela {
+    width: 97%;
+    margin: 0 1.5em;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    background-color: #DCDCDC;
+    border-radius: 5px;
+}
+
 .nome_principal {
     margin: 20px 0 0 20px;
     font-weight: bold;
+    
 }
 
 table {
     margin: 20px 0 40px 20px;
+    
 }
 
 thead {
@@ -43,3 +127,17 @@ th, td {
     text-align: center;
         
 }
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 15px 0;
+	margin-top: 20px; 
+}
+
+.copyright {
+    color: #FFFFFF;
+	font-size: 15px;
+	margin: 15px 0 0;
+}
+
