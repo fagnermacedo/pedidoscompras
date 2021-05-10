@@ -30,13 +30,13 @@
         <section class="status-pedidos">
             
             <ul class="tipos-de-status">
-                <li>
+                <li class="status-em-andamento">
                     <p>Em Andamento....</p>
                 </li>
-                <li>
+                <li class="status-finalizado">
                     <p>Finalizado</p>
                 </li>
-                <li>
+                <li class="status-excluido">
                     <p>Excluído</p>
                 </li>
             </ul>
@@ -45,9 +45,10 @@
         </section>
 
 
-        <section class="lista-tabela">
-            <p class="nome_principal">Lista de  Clientes</p>
-            <div>
+        <fieldset>
+            <legend class="legenda-tabela">Lista de  Clientes</legend>
+
+            <section class="lista-tabela">
                 <table>
                     <thead>
                         <tr>
@@ -78,14 +79,17 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
+        </fieldset>
 
-            <p class="nome_principal">Lista de Produtos Cadastrados</p>
-            
-            <div>
+        <fieldset>
+            <legend class="legenda-tabela">Lista de Produtos Cadastrados</legend>
+
+            <section class="lista-tabela">
                 <table>
                     <thead>
                         <tr>
+                            <th><input type="checkbox"/></th>
                             <th>ID</th>
                             <th>Nome</th>
                             <th>Preço Unitário (R$)</th>
@@ -94,42 +98,49 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>1</td>
                             <td>Millenium​​ Falcon</td>
                             <td>550.000,00</td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>2</td>
                             <td>X-Wing</td>
                             <td>60.000,00</td>
                             <td>2</td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>3</td>
                             <td>Super​​ Star​​ Destroyer</td>
                             <td>4.570.000,00</td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>4</td>
                             <td>TIE​​ Fighter</td>
                             <td>75.000,00</td>
                             <td>2</td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>5</td>
                             <td>Lightsaber</td>
                             <td>6.000,00</td>
                             <td>5</td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>6</td>
                             <td>DLT-19​​ Heavy ​​Blaster​​ Rifle</td>
                             <td>5.800,00</td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td><input type="checkbox"></td>
                             <td>7</td>
                             <td>DL-44​​ Heavy​​ Blaster ​​Pistol</td>
                             <td>1.500,00</td>
@@ -137,10 +148,15 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
+            
+        </fieldset>
+
+        <section  class="menu-botoes">
+            <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Alterar</button>
+            <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Incluir</button>
+            <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Deletar</button>
         </section>
-
-
     </main>
 
     <footer>
