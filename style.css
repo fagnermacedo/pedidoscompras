@@ -3,12 +3,13 @@ body {
 }
 
 header {
-	background: #BBBBBB;
+	background: #B0C4DE;
 	padding: 20px 0;
 }
 
 header img {
     width: 15em;
+    margin: 0 0 0 10px;
 }
 
 .cabecalho {
@@ -17,6 +18,7 @@ header img {
 
 .nome_principal {
     margin: 20px 0 0 20px;
+    font-weight: bold;
 }
 
 table {
@@ -30,7 +32,9 @@ thead {
 }
 
 th, td {
+    font-size: 12px;
     border: 1px solid #000000;
-    padding: 3px;
-    
+    padding: 5px;
+    text-align: center;
+        
 }
