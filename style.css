@@ -42,9 +42,9 @@ header {
 
 /*
 ....
- #########################################################################
-    Dividindo as seções do arquivo HTML. Parte da seção main do arquivo
- #########################################################################
+ ############################################################################################################
+    Dividindo as seções do arquivo HTML. Parte da seção MAIN do arquivo
+ ############################################################################################################
 ....
 */
 
@@ -54,23 +54,23 @@ header {
     font-weight: bold;
 }
 
-/* #############################################################################
+/* ####################################################################
 
             Informações para a criação das guias de navegação no site 
  
     Fonte de informações sobre a criação de Guias de Páginas Inteiras
     https://www.w3schools.com/howto/howto_js_full_page_tabs.asp
    
-    ###########################################################################
+    ####################################################################
  */
 
 .tablink {
     background-color: #555;
     color: white;
-    float: left;
+    float: left; /* Propriedade usada para especificar como o elemento deve flutuar // left - O elemento flutua à esquerda de seu contêiner */
     border: none;
-    outline: none;
-    cursor: pointer;
+    outline: none; /* Contorno - É uma linha que fica além da borda // O contorno NÂO faz parte das dimensões do elemento // Contorno é diferente de uma borda */
+    cursor: pointer; /* Especifica o tipo de cursor do Mouse quando o mesmo passar por cima do elemento // Há várias opções - Ver no link    https://www.w3schools.com/cssref/pr_class_cursor.asp  */
     padding: 14px 16px;
     font-size: 17px;
     width: 25%;
@@ -80,7 +80,7 @@ header {
     background-color: #777;
   }
   
-  /* Style the tab content */
+  /* Estilizando o conteúdo da Guia */
   .tabcontent {
     color: white;
     display: none;
@@ -91,6 +91,26 @@ header {
   #otimo {background-color:red;}
   #bom {background-color:green;}
   #ruim {background-color:blue;}
+
+  /*..
+   ##############################################################################################
+   ##############################################################################################
+   ..
+   */
+
+.menu-botoes {
+    margin: 10px 0 0 30px;
+    padding: 5px 5px;
+  
+}
+
+.botoes {
+
+    padding: 5px 20px;
+    margin: auto 15px;
+    background-color: #ADD8E6;
+    border: none;
+}
 
 /* 
 ..
@@ -138,24 +158,11 @@ th, td {
         
 }
 
-.menu-botoes {
-    margin: 10px 0 0 30px;
-    padding: 5px 5px;
-    
-    
-}
-
-.botoes {
-    padding: 5px 20px;
-    margin: auto 15px;
-    background-color: green;
-}
-
-
-
 /*
 ..
-  Informações referentes ao rodapé do site
+   ###########################################################################################
+                        Informações referentes ao rodapé do site
+   ###########################################################################################
 ..
 */
 
