@@ -1,4 +1,4 @@
-function openCity(cityName,elmnt,color) {
+function openStatus(statusName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -8,9 +8,9 @@ function openCity(cityName,elmnt,color) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(statusName).style.display = "block";
     elmnt.style.backgroundColor = color;
 
     }
-    // Get the element with id="defaultOpen" and click on it
+    // Obtem o elemento com o id="defaultOpen" e clica nele.
     document.getElementById("defaultOpen").click();
