@@ -102,8 +102,8 @@ header {
   }
   
   #otimo {background-color:white; color:#000000}
-  #bom {background-color: white;}
-  #ruim {background-color:white;}
+  #bom {background-color: white; color:#000000}
+  #ruim {background-color:white; color:#000000}
 
   /*..
    ##############################################################################################
