@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
-    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" />
+    
     
 </head>
 <body>
@@ -18,29 +18,37 @@
         <section class="cabecalho">
             <img class="logo-principal" src="logo-star-wars02.png" alt="Logotipo da Star Wars System">
             <img class="logo-usuario" src="usuario02.png" alt="Foto do usuário autenticado no programa">
-            <p class="descricao-sistema"> Sistema de Controle de Pedidos</p>
+            <p class="descricao-sistema">Controle de Pedidos</p>
         </section>
 
     </header>
     
     <main class="corpo-principal">
 
-        <p class="paragrafo-status">Status Pedidos</p>
+        <p class="paragrafo-status">Click no botões abaixo para listar os pedidos de acordo com a sua rentabilidade:</p>
 
         <section class="status-pedidos">
             
-            <ul class="tipos-de-status">
-                <li class="status-em-andamento">
-                    <p>Em Andamento....</p>
-                </li>
-                <li class="status-finalizado">
-                    <p>Finalizado</p>
-                </li>
-                <li class="status-excluido">
-                    <p>Excluído</p>
-                </li>
-            </ul>
+            <p></p>
+
+            <button class="tablink" onclick="openCity('otimo', this, 'red')" id="defaultOpen">Rentabilidade Ótima</button>
+            <button class="tablink" onclick="openCity('bom', this, 'green')">Rentabilidade Boa</button>
+            <button class="tablink" onclick="openCity('ruim', this, 'blue')">Rentabilidade Ruim</button>
             
+            <div id="otimo" class="tabcontent">
+                <h1>Rentabilidade Ótima</h1>
+                
+            </div>
+
+            <div id="bom" class="tabcontent">
+                <h1>Rentabilidade Boa</h1>
+                
+            </div>
+
+            <div id="ruim" class="tabcontent">
+                <h1>Rentabilidade Ruim</h1>
+                
+            </div>
 
         </section>
 
@@ -164,5 +172,7 @@
         <p class="copyright">&copy; Copyright 2021 - Star Wars System</p>
     </footer>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
