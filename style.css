@@ -92,61 +92,6 @@ header {
   #bom {background-color:green;}
   #ruim {background-color:blue;}
 
-/*
-.status-pedidos {
-    
-    width: 94%;
-    margin: 0 1.5em;   
-    border: 1px solid #000000;
-    background-color: white;
-    box-sizing: border-box;
-    border-radius: 5px;
-        
-}
-
-
-.tipos-de-status {
-    text-align: center;
-    vertical-align: center;
-}
-
-.tipos-de-status li {
-    display: inline-block;
-    text-align: center;
-    width: 15%;
-    margin: 2% 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 5px; 
-    
-
-}
-
-.tipos-de-status li.status-em-andamento {
-    background-color: #800000;
-    color: white;
-    font-weight: bolder;
-}
-
-.tipos-de-status li.status-finalizado {
-    background-color: #FF6347;
-    color: white;
-    font-weight: bolder;
-}
-
-.tipos-de-status li.status-excluido {
-    background-color: #FF4500;
-    color: white;
-    font-weight: bolder;
-}
-
-.tipos-de-status li:hover {
-    border: #000000;
-}
-
-*/
-
 /* ############################################### */
 
 .lista-tabela {
