@@ -44,7 +44,13 @@ function openStatus(statusName,elmnt,color) {
         
         var listaTr = document.createElement("tr");
 
-        var checkBoxTd = document.createElement("td");
+        
+        // Criando o campo CheckBox na Tabela
+        var checkBoxTd = document.createElement("td"); //Primeiro cria-se a célula para depois adicionar o checkbox
+        var checkBox = document.createElement("input");
+        checkBox.type = "checkbox"
+
+
         var idTd = document.createElement("td");
         var nomeTd = document.createElement("td");
         var precoUnitarioTd = document.createElement("td");
@@ -53,6 +59,9 @@ function openStatus(statusName,elmnt,color) {
         nomeTd.textContent = nome;
         precoUnitarioTd.textContent = precoUnitario;
         multiploTd.textContent = multiplo;
+
+        //Adicionando o checkbox a celular criada
+        checkBoxTd.appendChild(checkBox);
 
         listaTr.appendChild(checkBoxTd);
         listaTr.appendChild(idTd);
