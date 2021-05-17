@@ -104,7 +104,7 @@
                             <th>Múltiplo</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="tabela-pedidos">
                         <tr>
                             <td><input type="checkbox"></td>
                             <td>1</td>
@@ -158,9 +158,29 @@
                 </table>
             </section>
 
+            <section class="formulario">
+                <h2 class="id-formulario">Formulário para adição, alteração e exclusão de pedidos</h2>
+                <form class="formulario-principal">
+                    <div class="formulario-perguntas">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" type="text" placeholder="Digite o nome do cliente" class=" campo campo-nome">
+                    </div>
+                    <div class="formulario-perguntas">
+                        <label for="preco">Preço Unitário:</label>
+                        <input id="preco" name="preco-unitario" type="text" placeholder="Digite o preço unitário" class="campo campo-preco">
+                    </div>
+                    <div class="formulario-perguntas">
+                        <label for="multiplo">Múltiplo:</label>
+                        <input id="multiplo" name="multiplo" type="text" placeholder="Digite o fator de multiplicação" class=" campo campo-multiplo">
+                    </div>
+                </form>
+
+            </section>
+
+
             <section  class="menu-botoes">
                 <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Alterar</button>
-                <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Incluir</button>
+                <button class="botoes" id="incluir-pedido" type="button">Incluir</button>
                 <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Deletar</button>
             </section>
             

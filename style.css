@@ -119,10 +119,11 @@ header {
 
 .botoes {
 
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: auto 15px;
-    background-color: #B0C4DE;
-    border: #000000;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
 }
 
 /* 
@@ -169,6 +170,37 @@ th, td {
     padding: 5px;
     text-align: center;
         
+}
+/* #############################   FORMULÁRIO    ########################### */
+
+.formulario {
+    width: 97%;
+    margin: 1em 1.5em;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.id-formulario {
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.formulario-principal {
+    padding: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.formulario-principal input {
+    margin: 5px 20px  5px 0;
+    padding: 5px 10px;
+    width: 20em;
+    
 }
 
 /*
