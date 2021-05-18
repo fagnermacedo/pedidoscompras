@@ -42,13 +42,22 @@ function openStatus(statusName,elmnt,color) {
         var multiplo = form.multiplo.value;
 
         
-        var listaTr = document.createElement("tr");
-
-        
+        var listaTr = document.createElement("tr");        
         // Criando o campo CheckBox na Tabela
         var checkBoxTd = document.createElement("td"); //Primeiro cria-se a célula para depois adicionar o checkbox
         var checkBox = document.createElement("input");
         checkBox.type = "checkbox"
+
+
+        //Pegando o último valor do ID, para ser incrementado quando adicionado um novo pedido
+        var ultimoId = document.getElementsByClassName("id");
+        
+        console.log(ultimoId);
+
+        
+
+
+
 
 
         var idTd = document.createElement("td");
