@@ -30,56 +30,50 @@ function openStatus(statusName,elmnt,color) {
     ##############################################################################################################
     */
 
-    var botaoIncluir = document.querySelector("#incluir-pedido");
+    // var botaoIncluir = document.querySelector("#incluir-pedido");
 
-    botaoIncluir.addEventListener("click", function(event){
-        event.preventDefault();
+    // botaoIncluir.addEventListener("click", function(event){
+    //     event.preventDefault();
 
-        var form = document.querySelector(".formulario-principal");
+    //     var form = document.querySelector(".formulario-principal");
 
-        var nome = form.nome.value
-        var precoUnitario = form.preco.value;
-        var multiplo = form.multiplo.value;
-
-        
-        var listaTr = document.createElement("tr");        
-        // Criando o campo CheckBox na Tabela
-        var checkBoxTd = document.createElement("td"); //Primeiro cria-se a célula para depois adicionar o checkbox
-        var checkBox = document.createElement("input");
-        checkBox.type = "checkbox"
-
-
-        //Pegando o último valor do ID, para ser incrementado quando adicionado um novo pedido
-        var ultimoId = document.getElementsByClassName("id");
-        
-        console.log(ultimoId);
+    //     var nome = form.nome.value
+    //     var precoUnitario = form.preco.value;
+    //     var multiplo = form.multiplo.value;
 
         
+    //     var listaTr = document.createElement("tr");        
+    //     // Criando o campo CheckBox na Tabela
+    //     var checkBoxTd = document.createElement("td"); //Primeiro cria-se a célula para depois adicionar o checkbox
+    //     var checkBox = document.createElement("input");
+    //     checkBox.type = "checkbox"
 
 
+    //     //Pegando o último valor do ID, para ser incrementado quando adicionado um novo pedido
+    //     var ultimoId = document.getElementsByClassName("id");
+        
+    //     console.log(ultimoId);
 
+    //     var idTd = document.createElement("td");
+    //     var nomeTd = document.createElement("td");
+    //     var precoUnitarioTd = document.createElement("td");
+    //     var multiploTd = document.createElement("td");
 
+    //     nomeTd.textContent = nome;
+    //     precoUnitarioTd.textContent = precoUnitario;
+    //     multiploTd.textContent = multiplo;
 
-        var idTd = document.createElement("td");
-        var nomeTd = document.createElement("td");
-        var precoUnitarioTd = document.createElement("td");
-        var multiploTd = document.createElement("td");
+    //     //Adicionando o checkbox a celular criada
+    //     checkBoxTd.appendChild(checkBox);
 
-        nomeTd.textContent = nome;
-        precoUnitarioTd.textContent = precoUnitario;
-        multiploTd.textContent = multiplo;
+    //     listaTr.appendChild(checkBoxTd);
+    //     listaTr.appendChild(idTd);
+    //     listaTr.appendChild(nomeTd);
+    //     listaTr.appendChild(precoUnitarioTd);
+    //     listaTr.appendChild(multiploTd);
 
-        //Adicionando o checkbox a celular criada
-        checkBoxTd.appendChild(checkBox);
+    //     var tabela = document.querySelector(".tabela-pedidos");
 
-        listaTr.appendChild(checkBoxTd);
-        listaTr.appendChild(idTd);
-        listaTr.appendChild(nomeTd);
-        listaTr.appendChild(precoUnitarioTd);
-        listaTr.appendChild(multiploTd);
+    //     tabela.appendChild(listaTr);
 
-        var tabela = document.querySelector(".tabela-pedidos");
-
-        tabela.appendChild(listaTr);
-
-    });
+    // });

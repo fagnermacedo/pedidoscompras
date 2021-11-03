@@ -169,7 +169,7 @@
                 <form class="formulario-principal">
                     <div class="formulario-perguntas">
                         <label for="nome">Nome:</label>
-                        <input id="nome" name="nome" type="text" placeholder="Digite o nome do cliente" class=" campo campo-nome">
+                        <input id="nome_cliente" name="nome" type="text" placeholder="Digite o nome do cliente" class=" campo campo-nome">
                     </div>
                     <div class="formulario-perguntas">
                         <label for="preco">Preço Unitário:</label>
@@ -201,20 +201,20 @@
                     <h2>Novo Cliente</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span> <!-- Botão X para fechar a tela -->
                 </header>
-                <form class="modal-form">
-                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
-                    <input type="email" class="modal-field" placeholder="e-mail do Cliente">
-                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
-                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+                <form id="form" class="modal-form">
+                    <input id="nome" type="text" class="modal-field" placeholder="Nome do Cliente" required>
+                    <input id="email" type="email" class="modal-field" placeholder="e-mail do Cliente" required>
+                    <input id="celular" type="text" class="modal-field" placeholder="Celular do Cliente" required>
+                    <input id="cidade" type="text" class="modal-field" placeholder="Cidade do Cliente" required>
                 </form>
                 <footer class="modal-footer">
-                    <button class="button green">Salvar</button>
-                    <button class="button blue">Cancelar</button>
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
                 </footer>
             </div>
         </div>
 
-        <table class="records">
+        <table id="tbClient" class="records">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -225,36 +225,36 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Maria</td>
-                    <td>maria@gmail.com</td>
-                    <td>(11) 97165-1111</td>
-                    <td>Anapolis</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>João Pedro</td>
-                    <td>joao@gmail.com</td>
-                    <td>(11) 97165-2222</td>
-                    <td>Jandira</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jose da Silva</td>
-                    <td>jose@gmail.com</td>
-                    <td>(11) 97165-3333</td>
-                    <td>São Roque</td>
-                    <td>
-                        <button type="button" class="button green">editar</button>
-                        <button type="button" class="button red">excluir</button>
-                    </td>
-                </tr>
+                <!-- <tr>
+                        <td>Maria</td>
+                        <td>maria@gmail.com</td>
+                        <td>(11) 97165-1111</td>
+                        <td>Anapolis</td>
+                        <td>
+                            <button type="button" class="button green">editar</button>
+                            <button type="button" class="button red">excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>João Pedro</td>
+                        <td>joao@gmail.com</td>
+                        <td>(11) 97165-2222</td>
+                        <td>Jandira</td>
+                        <td>
+                            <button type="button" class="button green">editar</button>
+                            <button type="button" class="button red">excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jose da Silva</td>
+                        <td>jose@gmail.com</td>
+                        <td>(11) 97165-3333</td>
+                        <td>São Roque</td>
+                        <td>
+                            <button type="button" class="button green">editar</button>
+                            <button type="button" class="button red">excluir</button>
+                        </td>
+                </tr> -->
             </tbody>
         </table>
 
