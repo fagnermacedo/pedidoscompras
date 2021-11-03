@@ -11,11 +11,14 @@
 
     <link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button_modal.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/records.css">
     
     
 </head>
 <body>
-    <header>
+    <header class="cabecalhoPrincipal">
         <section class="cabecalho">
             <img class="logo-principal" src="img/logo-star-wars02.png" alt="Logotipo da Star Wars System">
             <img class="logo-usuario" src="img/usuario02.png" alt="Foto do usuário autenticado no programa">
@@ -53,10 +56,11 @@
 
         </section>
 
+        <!--
         <fieldset>
             <legend class="legenda-tabela">Lista de  Clientes</legend>
 
-            <section class="lista-tabela">
+             <section class="lista-tabela">
                 <table>
                     <thead>
                         <tr>
@@ -87,8 +91,10 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
+            </section> 
         </fieldset>
+
+        -->
 
         <fieldset>
             <legend class="legenda-tabela">Lista de Produtos Cadastrados</legend>
@@ -179,22 +185,88 @@
 
 
             <section  class="menu-botoes">
-                <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Alterar</button>
-                <button class="botoes" id="incluir-pedido" type="button">Incluir</button>
-                <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Deletar</button>
+                <button class="button incluir" id="incluirCliente" type="button">Cadastrar Clientes</button>
+                <!-- <button class="button" type="button" onclick="alert('Funcionalidade ainda não implementada')">Alterar</button>
+                <button class="button" type="button" onclick="alert('Funcionalidade ainda não implementada')">Deletar</button> -->
             </section>
             
         </fieldset>
-
-        
+                
     </main>
+
+    <section class="listagemPedidos">
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span> <!-- Botão X para fechar a tela -->
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" class="modal-field" placeholder="e-mail do Cliente">
+                    <input type="text" class="modal-field" placeholder="Celular do Cliente">
+                    <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>(11) 97165-1111</td>
+                    <td>Anapolis</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>João Pedro</td>
+                    <td>joao@gmail.com</td>
+                    <td>(11) 97165-2222</td>
+                    <td>Jandira</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jose da Silva</td>
+                    <td>jose@gmail.com</td>
+                    <td>(11) 97165-3333</td>
+                    <td>São Roque</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
 
     <footer>
         <img src="img/logo-star-wars02-white.png" alt="Logotipo Star Wars">
         <p class="copyright">&copy; Copyright 2021 - Star Wars System</p>
     </footer>
     
-    <script src="/scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/modal.js"></script>
 
 </body>
 </html>
