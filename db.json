@@ -1,6 +1,6 @@
 [
 	{
-		"nome":"Millenium Falcon",
+		"nome":"Millenium_Falcon",
 		"preco":"550.000,00",
 		"multiplo":""
 	},
@@ -10,12 +10,12 @@
 		"multiplo":""
 	},
 	{
-		"nome":"Super Star Destroyer",
+		"nome":"Super_Star_Destroyer",
 		"preco":"4.570.000,00",
 		"multiplo":""
 	},
 	{
-		"nome":"TIE Fighter",
+		"nome":"TIE_Fighter",
 		"preco":"75.000,00",
 		"multiplo":"2"
 	},
@@ -25,12 +25,12 @@
 		"multiplo":"5"
 	},
 	{
-		"nome":"DLT-19 Heavy Blaster Rifle",
+		"nome":"DLT-19_Heavy_Blaster_Rifle",
 		"preco":"5.800,00",
 		"multiplo":""
 	},
 	{
-		"nome":"DL-44 Heavy Blaster Pistol",
+		"nome":"DL-44_Heavy_Blaster_Pistol",
 		"preco":"1.500,00",
 		"multiplo":"10"
 	}
