@@ -1,35 +1,42 @@
 [
 	{
+		"id":"1",
 		"nome":"Millenium_Falcon",
 		"preco":"550.000,00",
 		"multiplo":""
 	},
 	{
+		"id":"2",
 		"nome":"X-Wing",
 		"preco":"60.000,00",
 		"multiplo":""
 	},
 	{
+		"id":"3",
 		"nome":"Super_Star_Destroyer",
 		"preco":"4.570.000,00",
 		"multiplo":""
 	},
 	{
+		"id":"4",
 		"nome":"TIE_Fighter",
 		"preco":"75.000,00",
 		"multiplo":"2"
 	},
 	{
+		"id":"5",
 		"nome":"Lightsaber",
 		"preco":"6.000,00",
 		"multiplo":"5"
 	},
 	{
+		"id":"6",
 		"nome":"DLT-19_Heavy_Blaster_Rifle",
 		"preco":"5.800,00",
 		"multiplo":""
 	},
 	{
+		"id":"7",
 		"nome":"DL-44_Heavy_Blaster_Pistol",
 		"preco":"1.500,00",
 		"multiplo":"10"
