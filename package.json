@@ -1,0 +1,19 @@
+{
+  "name": "pedidoscompras",
+  "version": "1.0.0",
+  "description": "Site para cadastro de pedidos",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fagnermacedo/pedidoscompras.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fagnermacedo/pedidoscompras/issues"
+  },
+  "homepage": "https://github.com/fagnermacedo/pedidoscompras#readme"
+}

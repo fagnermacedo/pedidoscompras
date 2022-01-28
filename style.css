@@ -224,3 +224,12 @@ footer {
 	margin: 15px 0 0;
 }
 
+.invisivel {
+	display: none;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+

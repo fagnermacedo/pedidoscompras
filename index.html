@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Listagem de Controle de Pedidos</title>
-
-    <!--As intruções abaixo são necessárias para dar instruções ao brownser de como 
-    controlar as dimenções da página WEB. Configurações ainda não implementadas no CSS -->
-
     <meta name="viewport" content="width=device-width">
-
     <link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-    
-    
+	<link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <header>
         <section class="cabecalho">
-            <img class="logo-principal" src="logo-star-wars02.png" alt="Logotipo da Star Wars System">
-            <img class="logo-usuario" src="usuario02.png" alt="Foto do usuário autenticado no programa">
+            <img class="logo-principal" src="imagens/logo-star-wars02.png" alt="Logotipo da Star Wars System">
+            <img class="logo-usuario" src="imagens/usuario02.png" alt="Foto do usuário autenticado no programa">
             <p class="descricao-sistema">Controle de Pedidos</p>
         </section>
 
@@ -91,69 +84,31 @@
         </fieldset>
 
         <fieldset>
+            <span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+
+            <button id="buscar-produtos" class="botao">Atualizar</button>
             <legend class="legenda-tabela">Lista de Produtos Cadastrados</legend>
 
             <section class="lista-tabela">
                 <table>
                     <thead>
                         <tr>
-                            <th><input type="checkbox"/></th>
-                            <th  class="id">ID</th>
+                            <!-- <th><input type="checkbox"/></th> -->
+                            <th  class="id">ID</th> 
                             <th>Nome</th>
                             <th>Preço Unitário (R$)</th>
                             <th>Múltiplo</th>
                         </tr>
                     </thead>
                     <tbody class="tabela-pedidos">
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">1</td>
-                            <td>Millenium​​ Falcon</td>
-                            <td>550.000,00</td>
-                            <td></td>
+                        <tr class="cliente-pedido">
+                            <!-- <td class="info-checkbox"><input type="checkbox"></td> -->
+                            <td class="info-id">1</td>
+                            <td class="info-nome">Millenium​​ Falcon</td>
+                            <td class="info-preco">550.000,00</td>
+                            <td class="info-multiplo">2</td>
                         </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">2</td>
-                            <td>X-Wing</td>
-                            <td>60.000,00</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">3</td>
-                            <td>Super​​ Star​​ Destroyer</td>
-                            <td>4.570.000,00</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">4</td>
-                            <td>TIE​​ Fighter</td>
-                            <td>75.000,00</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">5</td>
-                            <td>Lightsaber</td>
-                            <td>6.000,00</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">6</td>
-                            <td>DLT-19​​ Heavy ​​Blaster​​ Rifle</td>
-                            <td>5.800,00</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td class="id">7</td>
-                            <td>DL-44​​ Heavy​​ Blaster ​​Pistol</td>
-                            <td>1.500,00</td>
-                            <td>10</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </section>
@@ -161,6 +116,18 @@
             <section class="formulario">
                 <h2 class="id-formulario">Formulário para adição, alteração e exclusão de pedidos</h2>
                 <form class="formulario-principal">
+                    <div class="formulario-perguntas">
+                        <label for="cientes">Clientes</label>
+                        <select name="clienteSelect" id="clienteSelect">
+                            <option value=""></option>
+                            <option value="cliente01">Darth​​ Vader</option>
+                            <option value="cliente02">Obi-Wan​​ Kenobi</option>
+                            <option value="cliente03">Luke​​ Skywalker</option>
+                            <option value="cliente04">Imperador ​​Palpatine</option>
+                            <option value="cliente05">Han​​ Solo</option>
+                        </select>
+
+                    </div>
                     <div class="formulario-perguntas">
                         <label for="nome">Nome:</label>
                         <input id="nome" name="nome" type="text" placeholder="Digite o nome do cliente" class=" campo campo-nome">
@@ -179,9 +146,9 @@
 
 
             <section  class="menu-botoes">
-                <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Alterar</button>
-                <button class="botoes" id="incluir-pedido" type="button">Incluir</button>
-                <button class="botoes" type="button" onclick="alert('Funcionalidade ainda não implementada')">Deletar</button>
+                <button class="botoes btn-alterar" type="button" onclick="alert('Funcionalidade ainda não implementada')">Alterar</button>
+                <button class="botoes btn-incluir" id="incluir-pedido" type="button">Incluir</button>
+                <button class="botoes btn-deletar" type="button" onclick="alert('Funcionalidade ainda não implementada')">Deletar</button>
             </section>
             
         </fieldset>
@@ -190,11 +157,14 @@
     </main>
 
     <footer>
-        <img src="logo-star-wars02-white.png" alt="Logotipo Star Wars">
-        <p class="copyright">&copy; Copyright 2021 - Star Wars System</p>
+        <img src="imagens/logo-star-wars02-white.png" alt="Logotipo Star Wars">
+        <p class="copyright">&copy; Copyright 2022 - Star Wars System</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/busca-pedidos.js"></script>
+    <script src="js/adicionar-pedidos.js"></script>
+    <script src="js/remover-cliente.js"></script>
 
 </body>
 </html>
