@@ -40,5 +40,11 @@
 		"nome":"DL-44_Heavy_Blaster_Pistol",
 		"preco":"1.500,00",
 		"multiplo":"10"
+	},
+	{
+		"id":"8",
+		"nome":"Star Wars Space",
+		"preco":"4.500,00",
+		"multiplo":"10"
 	}
 ]
